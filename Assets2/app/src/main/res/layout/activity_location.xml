@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".LocationActivity"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLocations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/locations_form"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="135dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/layout_background"
+                android:elevation="1dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewLocationName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/editTextLocationName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="@string/location_name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textViewLocationDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/editTextLocationDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="@string/description"
+                    android:inputType="textLongMessage" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLocationSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_shape"
+                android:drawableLeft="@android:drawable/ic_menu_send"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:elevation="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

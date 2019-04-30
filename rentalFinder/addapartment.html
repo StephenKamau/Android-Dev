@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Add | Apartment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <form action="addapartment.php" method="POST" enctype="multipart/form-data">
+
+    <div class="form-content">
+
+      <h2>Appartment</h2>
+
+      <div class="form-field">
+        <label>Apartment Name:</label>
+        <div class="form-control">
+          <input type="text" name="apartment" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Apartment Location:</label>
+        <div class="form-control">
+          <input type="text" name="location" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Apartment Description:</label>
+        <div class="form-control">
+          <input type="text" name="description" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+          <label>Principal Contact:</label>
+          <div class="form-control">
+            <input type="text" name="principal_contact" required />
+          </div>
+        </div>
+
+      <div class="form-field">
+        <label>Apartment Cost (pm) Ksh:</label>
+        <div class="form-control">
+          <input type="number" name="rent_per_month" required />
+        </div>
+      </div>
+
+      <div class="centered">
+        <label>Room Available:</label>
+        <input type="checkbox" name="status" value="true" required />
+      </div>
+
+      <div class="form-field">
+        <label>Apartment Image (Max size 6 Mb):</label>
+        <input id="file" type="file" name="apartmentImage" accept="image/*" required />
+      </div>
+
+      <input type="submit" name="Submit" value="Submit">
+
+    </div>
+
+  </form>
+  <script>
+    var uploadField = document.getElementById("file");
+
+    uploadField.onchange = function () {
+      if (this.files[0].size > 7340032) {
+        alert("File is too big!");
+        this.value = "";
+      };
+    };
+  </script>
+</body>
+
+</html>

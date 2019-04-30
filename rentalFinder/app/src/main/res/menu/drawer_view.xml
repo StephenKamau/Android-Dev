@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/viewRecords"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_apartment"
+            android:icon="@drawable/apartment"
+            android:title="@string/view_apartment" />
+        <item
+            android:id="@+id/view_users"
+            android:icon="@drawable/users"
+            android:title="@string/users" />
+        <item
+            android:id="@+id/view_responsibility"
+            android:icon="@drawable/role"
+            android:title="@string/responsibility" />
+    </group>
+
+    <group
+        android:id="@+id/addRecords"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_apartment"
+            android:icon="@drawable/add_apartment"
+            android:title="@string/add_apartments" />
+        <item
+            android:id="@+id/add_responsibility"
+            android:icon="@drawable/add_responsibility"
+            android:title="@string/add_responsibility" />
+    </group>
+
+    <group
+        android:id="@+id/itemLogout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

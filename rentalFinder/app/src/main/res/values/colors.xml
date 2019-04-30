@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff3b30</color><!--#007AFF-->
+    <color name="colorPrimaryDark">#f11c00</color>
+    <color name="colorBlueDark">#004ca0</color>
+    <color name="black">#5b5b5b</color>
+    <color name="colorAccent">#f11c00</color>
+    <color name="colorButtons">#ff3b30</color>
+    <color name="colorBackground">#f1f1f1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="link">#5856d6</color>
+    <color name="contact">#ff8400</color><!--#2add27-->
+    <color name="rent">#f11c00</color>
+    <color name="blue">#007AFF</color>
+    <color name="divider">#bdbdbd</color>
+    <color name="dark">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
